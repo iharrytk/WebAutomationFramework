@@ -39,7 +39,7 @@ public class LoginPageTest extends BaseTest {
 	@Test(priority = 4)
 	public void doLoginTest() {
 
-		ap=lp.dologin("haritha@gmail.com", "haritha@2024");
+		ap=lp.dologin(prop.getProperty("username"), prop.getProperty("password"));
 		Assert.assertEquals(ap.getTitle(), "My Account");
 		System.out.println("Able to login successfully using valid credentials");
 	}
