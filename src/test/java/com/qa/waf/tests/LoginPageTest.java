@@ -1,0 +1,47 @@
+package com.qa.waf.tests;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import com.qa.waf.basetest.BaseTest;
+
+public class LoginPageTest extends BaseTest {
+
+	@Test(priority = 0)
+	public void lpTitleTest() {
+
+		String actualtitle = lp.getTitle();
+		Assert.assertEquals(actualtitle, "Account Login");
+
+	}
+
+	@Test(priority = 1)
+	public void lpUrlTest() {
+		String actualurl = lp.getURL();
+		Assert.assertTrue(actualurl.contains("route=account/login"));
+
+	}
+
+	@Test(priority = 2)
+	public void forgotpasswordTest() {
+
+		boolean actual = lp.forgotPassworddisplayed();
+		Assert.assertTrue(actual);
+
+	}
+
+	@Test(priority = 3)
+	public void lpfooterlinksSizeTest() {
+		int footerlist = lp.footerlist().size();
+		Assert.assertEquals(footerlist, 15);
+
+	}
+
+	@Test(priority = 4)
+	public void doLoginTest() {
+
+		ap=lp.dologin("haritha@gmail.com", "haritha@2024");
+		Assert.assertEquals(ap.getTitle(), "My Account");
+		System.out.println("Able to login successfully using valid credentials");
+	}
+
+}

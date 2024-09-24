@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-23T21:29:01 CDT" name="Default suite" finished-at="2024-09-23T21:29:08 CDT" duration-ms="7032">
+    <groups>
+    </groups>
+    <test started-at="2024-09-23T21:29:01 CDT" name="Default test" finished-at="2024-09-23T21:29:08 CDT" duration-ms="7032">
+      <class name="com.qa.waf.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-09-23T21:29:01 CDT" name="setUp" finished-at="2024-09-23T21:29:06 CDT" duration-ms="5315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="lpTitleTest()[pri:0, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-09-23T21:29:06 CDT" name="lpTitleTest" finished-at="2024-09-23T21:29:06 CDT" duration-ms="25" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lpTitleTest -->
+        <test-method signature="lpUrlTest()[pri:1, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-09-23T21:29:06 CDT" name="lpUrlTest" finished-at="2024-09-23T21:29:07 CDT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lpUrlTest -->
+        <test-method signature="forgotpasswordTest()[pri:2, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-09-23T21:29:07 CDT" name="forgotpasswordTest" finished-at="2024-09-23T21:29:07 CDT" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotpasswordTest -->
+        <test-method signature="lpfooterlinksSizeTest()[pri:3, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-09-23T21:29:07 CDT" name="lpfooterlinksSizeTest" finished-at="2024-09-23T21:29:07 CDT" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lpfooterlinksSizeTest -->
+        <test-method signature="doLoginTest()[pri:4, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-09-23T21:29:07 CDT" name="doLoginTest" finished-at="2024-09-23T21:29:08 CDT" duration-ms="1275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-09-23T21:29:08 CDT" name="tearDown" finished-at="2024-09-23T21:29:08 CDT" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.waf.tests.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
