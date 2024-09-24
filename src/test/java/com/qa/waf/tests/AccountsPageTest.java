@@ -12,7 +12,7 @@ import com.qa.waf.basetest.BaseTest;
 public class AccountsPageTest extends BaseTest {
 	@BeforeClass
 	public void preCondition() {
-		ap = lp.dologin("haritha@gmail.com", "haritha@2024");
+		ap = lp.dologin(prop.getProperty("username"), prop.getProperty("password"));
 
 	}
 
