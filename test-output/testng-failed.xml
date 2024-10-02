@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.waf.tests.LoginPageTest">
+      <class name="com.qa.waf.tests.ProductInfoPageTest">
         <methods>
-          <include name="doLoginTest"/>
-          <include name="lpfooterlinksSizeTest"/>
-          <include name="lpTitleTest"/>
+          <include name="productDetailsTest"/>
           <include name="setUp"/>
-          <include name="lpUrlTest"/>
+          <include name="prereq"/>
           <include name="tearDown"/>
-          <include name="forgotpasswordTest"/>
         </methods>
-      </class> <!-- com.qa.waf.tests.LoginPageTest -->
+      </class> <!-- com.qa.waf.tests.ProductInfoPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

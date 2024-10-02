@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.qa.waf.basetest.BaseTest;
+import com.qa.waf.utilities.AppConstants;
 
 public class AccountsPageTest extends BaseTest {
 	@BeforeClass
@@ -33,13 +34,13 @@ public class AccountsPageTest extends BaseTest {
 
 	@Test(priority = 7)
 	public void aptitleTest() {
-		Assert.assertEquals(ap.getTitle(), "My Account");
+		Assert.assertEquals(ap.getTitle(), AppConstants.ACCOUNT_TITLE);
 	}
 
 	@Test(priority = 8)
 	public void apgeturlTest() {
 
-		Assert.assertTrue(ap.getURL().contains("route=account/account"));
+		Assert.assertTrue(ap.getURL().contains(AppConstants.ACCOUNT_URL));
 	}
 
 	@Test(priority = 9)
