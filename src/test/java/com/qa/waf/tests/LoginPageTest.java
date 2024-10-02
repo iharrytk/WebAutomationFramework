@@ -3,6 +3,7 @@ package com.qa.waf.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.qa.waf.basetest.BaseTest;
+import com.qa.waf.utilities.AppConstants;
 
 public class LoginPageTest extends BaseTest {
 
@@ -10,14 +11,14 @@ public class LoginPageTest extends BaseTest {
 	public void lpTitleTest() {
 
 		String actualtitle = lp.getTitle();
-		Assert.assertEquals(actualtitle, "Account Login");
+		Assert.assertEquals(actualtitle, AppConstants.LOGIN_TITLE);
 
 	}
 
 	@Test(priority = 1)
 	public void lpUrlTest() {
 		String actualurl = lp.getURL();
-		Assert.assertTrue(actualurl.contains("route=account/login"));
+		Assert.assertTrue(actualurl.contains(AppConstants.LOGIN_URL));
 
 	}
 

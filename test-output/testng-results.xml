@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-24T17:29:46 CDT" name="Default suite" finished-at="2024-09-24T17:29:53 CDT" duration-ms="7466">
+  <suite started-at="2024-10-02T13:11:44 CDT" name="Default suite" finished-at="2024-10-02T13:12:00 CDT" duration-ms="16139">
     <groups>
     </groups>
-    <test started-at="2024-09-24T17:29:46 CDT" name="Default test" finished-at="2024-09-24T17:29:53 CDT" duration-ms="7466">
-      <class name="com.qa.waf.tests.AccountsPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@1a75e76a]" started-at="2024-09-24T17:29:46 CDT" name="setUp" finished-at="2024-09-24T17:29:51 CDT" duration-ms="4733" status="PASS">
+    <test started-at="2024-10-02T13:11:44 CDT" name="Default test" finished-at="2024-10-02T13:12:00 CDT" duration-ms="16139">
+      <class name="com.qa.waf.tests.ProductInfoPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:44 CDT" name="setUp" finished-at="2024-10-02T13:11:48 CDT" duration-ms="4438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@1a75e76a]" started-at="2024-09-24T17:29:51 CDT" name="preCondition" finished-at="2024-09-24T17:29:52 CDT" duration-ms="1153" status="PASS">
+        <test-method is-config="true" signature="prereq()[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:48 CDT" name="prereq" finished-at="2024-10-02T13:11:49 CDT" duration-ms="1206" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preCondition -->
-        <test-method signature="aplogoutLinkTest()[pri:5, instance:com.qa.waf.tests.AccountsPageTest@1a75e76a]" started-at="2024-09-24T17:29:52 CDT" name="aplogoutLinkTest" finished-at="2024-09-24T17:29:52 CDT" duration-ms="56" status="PASS">
+        </test-method> <!-- prereq -->
+        <test-method signature="productHeaderNameTest()[pri:13, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:49 CDT" name="productHeaderNameTest" finished-at="2024-10-02T13:11:52 CDT" duration-ms="2322" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aplogoutLinkTest -->
-        <test-method signature="accountHeadersTest()[pri:6, instance:com.qa.waf.tests.AccountsPageTest@1a75e76a]" started-at="2024-09-24T17:29:52 CDT" name="accountHeadersTest" finished-at="2024-09-24T17:29:52 CDT" duration-ms="80" status="PASS">
+        </test-method> <!-- productHeaderNameTest -->
+        <test-method signature="productImagesCountTest()[pri:14, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:52 CDT" name="productImagesCountTest" finished-at="2024-10-02T13:11:54 CDT" duration-ms="1888" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- accountHeadersTest -->
-        <test-method signature="aptitleTest()[pri:7, instance:com.qa.waf.tests.AccountsPageTest@1a75e76a]" started-at="2024-09-24T17:29:52 CDT" name="aptitleTest" finished-at="2024-09-24T17:29:52 CDT" duration-ms="19" status="PASS">
+        </test-method> <!-- productImagesCountTest -->
+        <test-method signature="productMetaDataTest()[pri:15, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:54 CDT" name="productMetaDataTest" finished-at="2024-10-02T13:11:55 CDT" duration-ms="1842" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aptitleTest -->
-        <test-method signature="apgeturlTest()[pri:8, instance:com.qa.waf.tests.AccountsPageTest@1a75e76a]" started-at="2024-09-24T17:29:52 CDT" name="apgeturlTest" finished-at="2024-09-24T17:29:52 CDT" duration-ms="20" status="PASS">
+        </test-method> <!-- productMetaDataTest -->
+        <test-method signature="productPriceTest()[pri:16, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:55 CDT" name="productPriceTest" finished-at="2024-10-02T13:11:57 CDT" duration-ms="1762" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- apgeturlTest -->
-        <test-method signature="apdoSearchTest()[pri:9, instance:com.qa.waf.tests.AccountsPageTest@1a75e76a]" started-at="2024-09-24T17:29:52 CDT" name="apdoSearchTest" finished-at="2024-09-24T17:29:53 CDT" duration-ms="915" status="PASS">
+        </test-method> <!-- productPriceTest -->
+        <test-method signature="productDetailsTest()[pri:17, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:57 CDT" name="productDetailsTest" finished-at="2024-10-02T13:11:59 CDT" duration-ms="1981" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- apdoSearchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@1a75e76a]" started-at="2024-09-24T17:29:53 CDT" name="tearDown" finished-at="2024-09-24T17:29:53 CDT" duration-ms="422" status="PASS">
+        </test-method> <!-- productDetailsTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:59 CDT" name="tearDown" finished-at="2024-10-02T13:12:00 CDT" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.waf.tests.AccountsPageTest -->
+      </class> <!-- com.qa.waf.tests.ProductInfoPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
