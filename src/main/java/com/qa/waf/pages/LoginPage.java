@@ -24,6 +24,7 @@ public class LoginPage {
 	private By loginbtnlocator = By.xpath("//input[@type='submit']");
 	private By forgotpassword = By.xpath("//a[text()='Forgotten Password' and @class='list-group-item']");
 	private By footerlist = By.xpath("//div[@class='row']//ul//a");
+	private By registerLink = By.xpath("//a[text()='Register' and @class='list-group-item']");
 
 	public AccountsPage dologin(String username, String password) {
 
@@ -51,8 +52,15 @@ public class LoginPage {
 
 	public String getURL() {
 
-	return  ele.waitForURLContainsAndCapture("route=account/login", 5);
-		
+		return ele.waitForURLContainsAndCapture("route=account/login", 5);
+
+	}
+
+	public RegisterPage goToRegisterPage() {
+
+		ele.waitForElementVisible(registerLink, 5).click();
+		return new RegisterPage(driver);
+
 	}
 
 }
