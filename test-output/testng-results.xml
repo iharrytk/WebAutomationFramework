@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-02T13:11:44 CDT" name="Default suite" finished-at="2024-10-02T13:12:00 CDT" duration-ms="16139">
+  <suite started-at="2024-10-03T13:55:35 CDT" name="Default suite" finished-at="2024-10-03T13:55:45 CDT" duration-ms="9618">
     <groups>
     </groups>
-    <test started-at="2024-10-02T13:11:44 CDT" name="Default test" finished-at="2024-10-02T13:12:00 CDT" duration-ms="16139">
-      <class name="com.qa.waf.tests.ProductInfoPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:44 CDT" name="setUp" finished-at="2024-10-02T13:11:48 CDT" duration-ms="4438" status="PASS">
+    <test started-at="2024-10-03T13:55:35 CDT" name="Default test" finished-at="2024-10-03T13:55:45 CDT" duration-ms="9618">
+      <class name="com.qa.waf.tests.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.waf.tests.RegisterTest@413d1baf]" started-at="2024-10-03T13:55:35 CDT" name="setUp" finished-at="2024-10-03T13:55:40 CDT" duration-ms="4502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="prereq()[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:48 CDT" name="prereq" finished-at="2024-10-02T13:11:49 CDT" duration-ms="1206" status="PASS">
+        <test-method is-config="true" signature="preReq()[pri:0, instance:com.qa.waf.tests.RegisterTest@413d1baf]" started-at="2024-10-03T13:55:40 CDT" name="preReq" finished-at="2024-10-03T13:55:41 CDT" duration-ms="982" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- prereq -->
-        <test-method signature="productHeaderNameTest()[pri:13, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:49 CDT" name="productHeaderNameTest" finished-at="2024-10-02T13:11:52 CDT" duration-ms="2322" status="PASS">
+        </test-method> <!-- preReq -->
+        <test-method signature="doRegisterTest()[pri:18, instance:com.qa.waf.tests.RegisterTest@413d1baf]" started-at="2024-10-03T13:55:41 CDT" name="doRegisterTest" finished-at="2024-10-03T13:55:44 CDT" duration-ms="3758" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productHeaderNameTest -->
-        <test-method signature="productImagesCountTest()[pri:14, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:52 CDT" name="productImagesCountTest" finished-at="2024-10-02T13:11:54 CDT" duration-ms="1888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productMetaDataTest()[pri:15, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:54 CDT" name="productMetaDataTest" finished-at="2024-10-02T13:11:55 CDT" duration-ms="1842" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productMetaDataTest -->
-        <test-method signature="productPriceTest()[pri:16, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:55 CDT" name="productPriceTest" finished-at="2024-10-02T13:11:57 CDT" duration-ms="1762" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productPriceTest -->
-        <test-method signature="productDetailsTest()[pri:17, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:57 CDT" name="productDetailsTest" finished-at="2024-10-02T13:11:59 CDT" duration-ms="1981" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productDetailsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@1a75e76a]" started-at="2024-10-02T13:11:59 CDT" name="tearDown" finished-at="2024-10-02T13:12:00 CDT" duration-ms="627" status="PASS">
+        </test-method> <!-- doRegisterTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.RegisterTest@413d1baf]" started-at="2024-10-03T13:55:44 CDT" name="tearDown" finished-at="2024-10-03T13:55:45 CDT" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.waf.tests.ProductInfoPageTest -->
+      </class> <!-- com.qa.waf.tests.RegisterTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

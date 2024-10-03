@@ -44,5 +44,8 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertEquals(ap.getTitle(), "My Account");
 		System.out.println("Able to login successfully using valid credentials");
 	}
+	
+	
+	
 
 }

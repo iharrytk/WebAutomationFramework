@@ -11,6 +11,7 @@ import com.qa.waf.factory.DriverFactory;
 import com.qa.waf.pages.AccountsPage;
 import com.qa.waf.pages.LoginPage;
 import com.qa.waf.pages.ProductInfoPage;
+import com.qa.waf.pages.RegisterPage;
 import com.qa.waf.pages.ResultsPage;
 
 public class BaseTest {
@@ -21,6 +22,7 @@ public class BaseTest {
 	protected AccountsPage ap;
 	protected ResultsPage rp;
 	protected ProductInfoPage pi;
+	protected RegisterPage rep;
 	protected DriverFactory df;
 	protected Properties prop;
 	protected SoftAssert sa;
