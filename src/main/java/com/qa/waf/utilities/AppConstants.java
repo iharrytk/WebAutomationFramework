@@ -11,6 +11,7 @@ public class AppConstants {
 	public static final String ACCOUNT_TITLE="My Account";
 	public static final String LOGIN_URL="route=account/login";
 	public static final String ACCOUNT_URL="route=account/account";
+	public static final String REGISTER_SUCESS_MESSAGE="Your Account Has Been Created!";
 	
 
 }

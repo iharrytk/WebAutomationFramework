@@ -35,24 +35,26 @@ public class RegisterPage {
 	private By continueLocator = By.xpath("//input[@type='submit' and @value='Continue']");
 	private By furtherContinueLocator=By.xpath("//a[text()='Continue']");
 	private By furtherLogout=By.xpath("(//a[text()='Logout'])[2]");
-	
+	private By registerSuccessMessageLocator=By.tagName("h1");
 
-	public void doRegister() {
+	public String doRegister(String firstName,String lastName,String email,String telephone,String password) {
 
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(AppConstants.MEDIUM_DEFAULT_TIMEOUT));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(firstNameLocator)).sendKeys("john");
-		driver.findElement(lastNameLocator).sendKeys("spurlin");
-		driver.findElement(emailLocator).sendKeys("johnspirulinaa@gmail.com");
-		driver.findElement(telephoneLocator).sendKeys("4125877896");
-		driver.findElement(passwordLocator).sendKeys("john@2024");
-		driver.findElement(passwordconfirmLocator).sendKeys("john@2024");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(firstNameLocator)).sendKeys(firstName);
+		driver.findElement(lastNameLocator).sendKeys(lastName);
+		driver.findElement(emailLocator).sendKeys(email);
+		driver.findElement(telephoneLocator).sendKeys(telephone);
+		driver.findElement(passwordLocator).sendKeys(password);
+		driver.findElement(passwordconfirmLocator).sendKeys(password);
 		driver.findElement(yesSubscribeLocator).click();
 		driver.findElement(agreeLocator).click();
 		driver.findElement(continueLocator).click();
+		String registerSuccessMessage=driver.findElement(registerSuccessMessageLocator).getText();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(furtherContinueLocator)).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(furtherLogout)).click();
 		driver.findElement(registerLink).click();
+		return registerSuccessMessage;
 
 	}
 
