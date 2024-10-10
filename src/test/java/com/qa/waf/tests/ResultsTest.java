@@ -5,6 +5,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.qa.waf.basetest.BaseTest;
+import com.qa.waf.dataproviders.ProductPageData;
+import com.qa.waf.pojos.ProductPagePOJO;
 
 public class ResultsTest extends BaseTest {
 
@@ -15,26 +17,27 @@ public class ResultsTest extends BaseTest {
 
 	}
 
-	@Test(priority = 10)
-	public void searchResultTitleTest() {
-		rp = ap.doSearch("MacBook");
+	@Test(priority = 10,dataProvider = "productSearchDataMethod",dataProviderClass =ProductPageData.class )
+	public void searchResultTitleTest(ProductPagePOJO pp) {
+		rp = ap.doSearch(pp.getProductSearch());
 		String title = rp.searchResultsTitle();
-		Assert.assertEquals(title, "Search - MacBook");
+		System.out.println("The actual page title is:"+title);
+		Assert.assertEquals(title, "Search -"+" "+pp.getProductSearch());
 
 	}
 
-	@Test(priority = 11)
-	public void searchResultsProductCount() {
-		rp = ap.doSearch("MacBook");
+	@Test(priority = 11,dataProvider = "productSearchDataMethod",dataProviderClass =ProductPageData.class)
+	public void searchResultsProductCount(ProductPagePOJO pp) {
+		rp = ap.doSearch(pp.getProductSearch());
 		int searchcount = rp.searchResultsProductCount();
 		Assert.assertTrue(searchcount > 0);
 
 	}
 
-	@Test(priority = 12)
-	public void selectProductTest() {
-		rp = ap.doSearch("MacBook");
-		pi = rp.selectProduct("MacBook Air");
+	@Test(priority = 12,dataProvider = "productSelectDataMethod",dataProviderClass =ProductPageData.class)
+	public void selectProductTest(ProductPagePOJO pp) {
+		rp = ap.doSearch(pp.getProductSearch());
+		pi = rp.selectProduct(pp.getProductSelect());
 
 	}
 

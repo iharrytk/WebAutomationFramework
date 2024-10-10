@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.qa.waf.basetest.BaseTest;
+import com.qa.waf.dataproviders.ProductPageData;
+import com.qa.waf.pojos.ProductPagePOJO;
 
 public class ProductInfoPageTest extends BaseTest {
 	Map<String, String> metadata = new HashMap<String, String>();
@@ -19,68 +21,68 @@ public class ProductInfoPageTest extends BaseTest {
 
 	}
 
-	@Test(priority = 13)
-	public void productHeaderNameTest() {
-		rp = ap.doSearch("MacBook");
-		pi = rp.selectProduct("MacBook Air");
+	@Test(priority = 13,dataProvider = "productSelectDataMethod",dataProviderClass =ProductPageData.class)
+	public void productHeaderNameTest(ProductPagePOJO pp) {
+		rp = ap.doSearch(pp.getProductSearch());
+		pi = rp.selectProduct(pp.getProductSelect());
 		String actualname = pi.getProductNameHeader();
 		System.out.println("The actual product headername is:" + actualname);
-		Assert.assertEquals(actualname, "MacBook Air");
+		Assert.assertEquals(actualname, pp.getProductSelect());
 
 	}
 
-	@Test(priority = 14)
-	public void productImagesCountTest() {
+	@Test(priority = 14,dataProvider = "productImagesDataMethod",dataProviderClass =ProductPageData.class)
+	public void productImagesCountTest(ProductPagePOJO pp) {
 
-		rp = ap.doSearch("MacBook");
-		pi = rp.selectProduct("MacBook Air");
+		rp = ap.doSearch(pp.getProductSearch());
+		pi = rp.selectProduct(pp.getProductSelect());
 		int actualimages = pi.getProductImagesCount();
 		System.out.println("The actual product images count is:" + actualimages);
-		Assert.assertEquals(actualimages, 4);
+		Assert.assertEquals(actualimages, pp.getProductImagesCount());
 	}
 
-	@Test(priority = 15)
-	public void productMetaDataTest() {
+	@Test(priority = 15,dataProvider = "productMetaDataMethod",dataProviderClass =ProductPageData.class)
+	public void productMetaDataTest(ProductPagePOJO pp) {
 
-		rp = ap.doSearch("MacBook");
-		pi = rp.selectProduct("MacBook Air");
+		rp = ap.doSearch(pp.getProductSearch());
+		pi = rp.selectProduct(pp.getProductSelect());
 		metadata = pi.getProductMetaData();
 		System.out.println("The product metadata is:" + metadata);
-		sa.assertEquals(metadata.get("Brand").trim(), "Apple");
-		sa.assertEquals(metadata.get("Product Code").trim(), "Product 17");
-		sa.assertEquals(metadata.get("Reward Points").trim(), "700");
-		sa.assertEquals(metadata.get("Availability").trim(), "Out Of Stock");
+		sa.assertEquals(metadata.get("Brand").trim(), pp.getBrand());
+		sa.assertEquals(metadata.get("Product Code").trim(), pp.getProductCode());
+		sa.assertEquals(metadata.get("Reward Points").trim(), pp.getRewardPoints());
+		sa.assertEquals(metadata.get("Availability").trim(), pp.getAvailability());
 		sa.assertAll();
 
 	}
 	
-	@Test(priority = 16)
-	public void productPriceTest() {
+	@Test(priority = 16,dataProvider = "productCompleteDataMethod",dataProviderClass =ProductPageData.class)
+	public void productPriceTest(ProductPagePOJO pp) {
 
-		rp = ap.doSearch("MacBook");
-		pi = rp.selectProduct("MacBook Air");
+		rp = ap.doSearch(pp.getProductSearch());
+		pi = rp.selectProduct(pp.getProductSelect());
 		metadata = pi.getProductPrice();
 		System.out.println("The product pricing is:" + metadata);
-		sa.assertEquals(metadata.get("price").trim(), "$1,202.00");
-		sa.assertEquals(metadata.get("Ex Tax").trim(), "$1,000.00");
+		sa.assertEquals(metadata.get("price").trim(), pp.getPrice());
+		sa.assertEquals(metadata.get("Ex Tax").trim(), pp.getExTax());
 		sa.assertAll();
 
 	}
 	
-	@Test(priority = 17)
-	public void productDetailsTest() {
+	@Test(priority = 17,dataProvider = "productCompleteDataMethod",dataProviderClass =ProductPageData.class)
+	public void productDetailsTest(ProductPagePOJO pp) {
 
-		rp = ap.doSearch("MacBook");
-		pi = rp.selectProduct("MacBook Air");
+		rp = ap.doSearch(pp.getProductSearch());
+		pi = rp.selectProduct(pp.getProductSelect());
 		metadata = pi.getProductCompleteInfo();
 		System.out.println("The product complete details is:" + metadata);
-		sa.assertEquals(metadata.get("Product Name").trim(), "MacBook Air");
-		sa.assertEquals(metadata.get("Brand").trim(), "Apple");
-		sa.assertEquals(metadata.get("Product Code").trim(), "Product 17");
-		sa.assertEquals(metadata.get("Reward Points").trim(), "700");
-		sa.assertEquals(metadata.get("Availability").trim(), "Out Of Stock");
-		sa.assertEquals(metadata.get("price").trim(), "$1,202.00");
-		sa.assertEquals(metadata.get("Ex Tax").trim(), "$1,000.00");
+		sa.assertEquals(metadata.get("Product Name").trim(), pp.getProductSelect());
+		sa.assertEquals(metadata.get("Brand").trim(), pp.getBrand());
+		sa.assertEquals(metadata.get("Product Code").trim(), pp.getProductCode());
+		sa.assertEquals(metadata.get("Reward Points").trim(), pp.getRewardPoints());
+		sa.assertEquals(metadata.get("Availability").trim(), pp.getAvailability());
+		sa.assertEquals(metadata.get("price").trim(), pp.getPrice());
+		sa.assertEquals(metadata.get("Ex Tax").trim(), pp.getExTax());
 		sa.assertAll();
 
 	}
