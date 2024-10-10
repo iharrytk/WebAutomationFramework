@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.qa.waf.basetest.BaseTest;
+import com.qa.waf.dataproviders.ProductPageData;
+import com.qa.waf.pojos.ProductPagePOJO;
 import com.qa.waf.utilities.AppConstants;
 
 public class AccountsPageTest extends BaseTest {
@@ -43,10 +45,10 @@ public class AccountsPageTest extends BaseTest {
 		Assert.assertTrue(ap.getURL().contains(AppConstants.ACCOUNT_URL));
 	}
 
-	@Test(priority = 9)
-	public void apdoSearchTest() {
+	@Test(priority = 9, dataProvider = "productSearchDataMethod", dataProviderClass = ProductPageData.class)
+	public void apdoSearchTest(ProductPagePOJO pp) {
 
-		rp = ap.doSearch("mac");
+		rp = ap.doSearch(pp.getProductSearch());
 	}
 
 }

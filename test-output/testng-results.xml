@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-09T16:40:34 CDT" name="Default suite" finished-at="2024-10-09T16:40:48 CDT" duration-ms="14408">
+  <suite started-at="2024-10-09T23:26:07 CDT" name="Default suite" finished-at="2024-10-09T23:26:15 CDT" duration-ms="8343">
     <groups>
     </groups>
-    <test started-at="2024-10-09T16:40:34 CDT" name="Default test" finished-at="2024-10-09T16:40:48 CDT" duration-ms="14408">
-      <class name="com.qa.waf.tests.RegisterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.waf.tests.RegisterTest@16eb3ea3]" started-at="2024-10-09T16:40:34 CDT" name="setUp" finished-at="2024-10-09T16:40:38 CDT" duration-ms="4635" status="PASS">
+    <test started-at="2024-10-09T23:26:07 CDT" name="Default test" finished-at="2024-10-09T23:26:15 CDT" duration-ms="8343">
+      <class name="com.qa.waf.tests.AccountsPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:07 CDT" name="setUp" finished-at="2024-10-09T23:26:11 CDT" duration-ms="4596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="preReq()[pri:0, instance:com.qa.waf.tests.RegisterTest@16eb3ea3]" started-at="2024-10-09T16:40:38 CDT" name="preReq" finished-at="2024-10-09T16:40:39 CDT" duration-ms="975" status="PASS">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:11 CDT" name="preCondition" finished-at="2024-10-09T23:26:13 CDT" duration-ms="1254" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- preReq -->
-        <test-method signature="doRegisterTest(com.qa.waf.pojos.RegisterPagePOJO)[pri:18, instance:com.qa.waf.tests.RegisterTest@16eb3ea3]" started-at="2024-10-09T16:40:39 CDT" name="doRegisterTest" data-provider="RegisterPageDataMethod" finished-at="2024-10-09T16:40:43 CDT" duration-ms="4181" status="PASS">
+        </test-method> <!-- preCondition -->
+        <test-method signature="aplogoutLinkTest()[pri:5, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:13 CDT" name="aplogoutLinkTest" finished-at="2024-10-09T23:26:13 CDT" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aplogoutLinkTest -->
+        <test-method signature="accountHeadersTest()[pri:6, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:13 CDT" name="accountHeadersTest" finished-at="2024-10-09T23:26:13 CDT" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountHeadersTest -->
+        <test-method signature="aptitleTest()[pri:7, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:13 CDT" name="aptitleTest" finished-at="2024-10-09T23:26:13 CDT" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aptitleTest -->
+        <test-method signature="apgeturlTest()[pri:8, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:13 CDT" name="apgeturlTest" finished-at="2024-10-09T23:26:13 CDT" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apgeturlTest -->
+        <test-method signature="apdoSearchTest(com.qa.waf.pojos.ProductPagePOJO)[pri:9, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:13 CDT" name="apdoSearchTest" data-provider="productSearchDataMethod" finished-at="2024-10-09T23:26:14 CDT" duration-ms="972" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RegisterPagePOJO [firstName=john, lastName=spurlin, email=johnspirulinaaa1728510039797@gmail.com, telephone=4125877896, password=john@2024]]]>
+                <![CDATA[ProductPagePOJO [productSearch=MacBook, productSelect=null, productImagesCount=0, brand=null, productCode=null, rewardPoints=null, availability=null, price=null, exTax=null]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doRegisterTest -->
-        <test-method signature="doRegisterTest(com.qa.waf.pojos.RegisterPagePOJO)[pri:18, instance:com.qa.waf.tests.RegisterTest@16eb3ea3]" started-at="2024-10-09T16:40:43 CDT" name="doRegisterTest" data-provider="RegisterPageDataMethod" finished-at="2024-10-09T16:40:48 CDT" duration-ms="4247" status="PASS">
+        </test-method> <!-- apdoSearchTest -->
+        <test-method signature="apdoSearchTest(com.qa.waf.pojos.ProductPagePOJO)[pri:9, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:14 CDT" name="apdoSearchTest" data-provider="productSearchDataMethod" finished-at="2024-10-09T23:26:15 CDT" duration-ms="932" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RegisterPagePOJO [firstName=diego, lastName=sebastian, email=diegosebastian1728510039798@gmail.com, telephone=1478523698, password=diego@2024]]]>
+                <![CDATA[ProductPagePOJO [productSearch=Samsung, productSelect=null, productImagesCount=0, brand=null, productCode=null, rewardPoints=null, availability=null, price=null, exTax=null]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doRegisterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.RegisterTest@16eb3ea3]" started-at="2024-10-09T16:40:48 CDT" name="tearDown" finished-at="2024-10-09T16:40:48 CDT" duration-ms="300" status="PASS">
+        </test-method> <!-- apdoSearchTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@5524cca1]" started-at="2024-10-09T23:26:15 CDT" name="tearDown" finished-at="2024-10-09T23:26:15 CDT" duration-ms="314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.waf.tests.RegisterTest -->
+      </class> <!-- com.qa.waf.tests.AccountsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

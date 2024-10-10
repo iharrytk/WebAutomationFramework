@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.waf.tests.RegisterTest">
+      <class name="com.qa.waf.tests.ProductInfoPageTest">
         <methods>
-          <include name="doRegisterTest"/>
+          <include name="productMetaDataTest" invocation-numbers="1"/>
           <include name="setUp"/>
-          <include name="preReq"/>
+          <include name="prereq"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.qa.waf.tests.RegisterTest -->
+      </class> <!-- com.qa.waf.tests.ProductInfoPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
