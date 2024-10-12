@@ -20,15 +20,18 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.qa.waf.factory.DriverFactory;
 import com.qa.waf.frameworkexceptions.FrameException;
 
 public class ElementUtil {
 	
 	private WebDriver driver;
 	private final int DEFAULT_TIME_OUT = 5;
+	private JavaScriptUtil jutil;
 
 	public ElementUtil(WebDriver driver) {
 		this.driver = driver;
+		jutil=new JavaScriptUtil(this.driver);
 
 	}
 
@@ -52,7 +55,11 @@ public class ElementUtil {
 	}
 
 	public WebElement getElement(By locator, int timeOut) {
-		return waitForElementVisible(locator, timeOut);
+		WebElement element= waitForElementVisible(locator, timeOut);
+		if(Boolean.parseBoolean(DriverFactory.highlightElement)) {
+			jutil.flash(element);
+		}
+		return element;
 	}
 
 	public WebElement getElement(By locator) {
@@ -63,6 +70,9 @@ public class ElementUtil {
 		} catch (NoSuchElementException e) {
 			System.out.println("Element is not found using this locator..." + locator);
 			element = waitForElementVisible(locator, DEFAULT_TIME_OUT);
+		}
+		if(Boolean.parseBoolean(DriverFactory.highlightElement)) {
+			jutil.flash(element);
 		}
 		return element;
 	}
@@ -407,7 +417,11 @@ public class ElementUtil {
 	 */
 	public WebElement waitForElementPresence(By locator, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
-		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		WebElement element=wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		if(Boolean.parseBoolean(DriverFactory.highlightElement)) {
+			jutil.flash(element);
+		}
+		return element;
 
 	}
 
@@ -421,7 +435,11 @@ public class ElementUtil {
 	 */
 	public WebElement waitForElementVisible(By locator, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
-		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		WebElement element= wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+		if(Boolean.parseBoolean(DriverFactory.highlightElement)) {
+			jutil.flash(element);
+		}
+		return element;
 	}
 
 	/**
