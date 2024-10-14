@@ -2,6 +2,15 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="OpenCart Regression Suite Master Suite" verbose="4" thread-count="3" parallel="tests">
 
+	<listeners>
+		<listener
+			class-name="com.qa.waf.listeners.ExtentReportListener" />
+		<listener
+			class-name="com.qa.waf.listeners.TestAllureListener" />
+		<listener
+			class-name="com.qa.waf.listeners.AnnotationTransformer" />
+	</listeners>
+	
 	<test name="Login Page Test">
 	<parameter name="browser" value="chrome" />
 		<classes>
@@ -28,7 +37,7 @@
 		</classes>
 	</test>
 	<test name="Product Info Page Test">
-	<parameter name="browser" value="firefox" />
+	<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.qa.waf.tests.ProductInfoPageTest" />
 		</classes>

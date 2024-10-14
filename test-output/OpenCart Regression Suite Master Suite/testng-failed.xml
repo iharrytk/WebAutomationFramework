@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [OpenCart Regression Suite Master Suite]" guice-stage="DEVELOPMENT" verbose="4">
+  <listeners>
+    <listener class-name="com.qa.waf.listeners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Product Info Page Test(failed)" verbose="4">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.waf.tests.ProductInfoPageTest">
+        <methods>
+          <include name="productDetailsTest" invocation-numbers="0"/>
+          <include name="productMetaDataTest" invocation-numbers="0"/>
+          <include name="productPriceTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="prereq"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.waf.tests.ProductInfoPageTest -->
+    </classes>
+  </test> <!-- Product Info Page Test(failed) -->
+</suite> <!-- Failed suite [OpenCart Regression Suite Master Suite] -->
