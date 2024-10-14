@@ -5,7 +5,11 @@
     <classes>
       <class name="com.qa.waf.tests.ProductInfoPageTest">
         <methods>
-          <include name="productMetaDataTest" invocation-numbers="1"/>
+          <include name="productDetailsTest"/>
+          <include name="productHeaderNameTest"/>
+          <include name="productImagesCountTest"/>
+          <include name="productMetaDataTest"/>
+          <include name="productPriceTest"/>
           <include name="setUp"/>
           <include name="prereq"/>
           <include name="tearDown"/>

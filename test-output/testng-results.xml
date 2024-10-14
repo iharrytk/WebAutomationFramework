@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-11T21:54:00 CDT" name="OpenCart Regression Suite Master Suite" finished-at="2024-10-11T21:54:49 CDT" duration-ms="49055">
+  <suite started-at="2024-10-13T12:44:32 CDT" name="OpenCart Regression Suite Master Suite" finished-at="2024-10-13T12:44:57 CDT" duration-ms="25003">
     <groups>
     </groups>
-    <test started-at="2024-10-11T21:54:00 CDT" name="Login Page Test" finished-at="2024-10-11T21:54:10 CDT" duration-ms="10282">
+    <test started-at="2024-10-13T12:44:32 CDT" name="Login Page Test" finished-at="2024-10-13T12:44:42 CDT" duration-ms="9931">
       <class name="com.qa.waf.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-10-11T21:54:00 CDT" name="setUp" finished-at="2024-10-11T21:54:05 CDT" duration-ms="4782" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.LoginPageTest@46046c06]" started-at="2024-10-13T12:44:32 CDT" name="setUp" finished-at="2024-10-13T12:44:38 CDT" duration-ms="5213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,35 +18,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="lpTitleTest()[pri:0, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-10-11T21:54:05 CDT" name="lpTitleTest" finished-at="2024-10-11T21:54:05 CDT" duration-ms="36" status="PASS">
+        <test-method signature="lpTitleTest()[pri:0, instance:com.qa.waf.tests.LoginPageTest@46046c06]" started-at="2024-10-13T12:44:38 CDT" name="lpTitleTest" finished-at="2024-10-13T12:44:38 CDT" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lpTitleTest -->
-        <test-method signature="lpUrlTest()[pri:1, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-10-11T21:54:05 CDT" name="lpUrlTest" finished-at="2024-10-11T21:54:05 CDT" duration-ms="33" status="PASS">
+        <test-method signature="lpUrlTest()[pri:1, instance:com.qa.waf.tests.LoginPageTest@46046c06]" started-at="2024-10-13T12:44:38 CDT" name="lpUrlTest" finished-at="2024-10-13T12:44:38 CDT" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lpUrlTest -->
-        <test-method signature="forgotpasswordTest()[pri:2, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-10-11T21:54:05 CDT" name="forgotpasswordTest" finished-at="2024-10-11T21:54:06 CDT" duration-ms="951" status="PASS">
+        <test-method signature="forgotpasswordTest()[pri:2, instance:com.qa.waf.tests.LoginPageTest@46046c06]" started-at="2024-10-13T12:44:38 CDT" name="forgotpasswordTest" finished-at="2024-10-13T12:44:39 CDT" duration-ms="902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotpasswordTest -->
-        <test-method signature="lpfooterlinksSizeTest()[pri:3, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-10-11T21:54:06 CDT" name="lpfooterlinksSizeTest" finished-at="2024-10-11T21:54:06 CDT" duration-ms="26" status="PASS">
+        <test-method signature="lpfooterlinksSizeTest()[pri:3, instance:com.qa.waf.tests.LoginPageTest@46046c06]" started-at="2024-10-13T12:44:39 CDT" name="lpfooterlinksSizeTest" finished-at="2024-10-13T12:44:39 CDT" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lpfooterlinksSizeTest -->
-        <test-method signature="doLoginTest()[pri:4, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-10-11T21:54:06 CDT" name="doLoginTest" finished-at="2024-10-11T21:54:10 CDT" duration-ms="4192" status="PASS">
+        <test-method signature="doLoginTest()[pri:4, instance:com.qa.waf.tests.LoginPageTest@46046c06]" started-at="2024-10-13T12:44:39 CDT" name="doLoginTest" finished-at="2024-10-13T12:44:42 CDT" duration-ms="3229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.LoginPageTest@353352b6]" started-at="2024-10-11T21:54:10 CDT" name="tearDown" finished-at="2024-10-11T21:54:10 CDT" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.LoginPageTest@46046c06]" started-at="2024-10-13T12:44:42 CDT" name="tearDown" finished-at="2024-10-13T12:44:42 CDT" duration-ms="271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.waf.tests.LoginPageTest -->
     </test> <!-- Login Page Test -->
-    <test started-at="2024-10-11T21:54:00 CDT" name="Accounts Page Test" finished-at="2024-10-11T21:54:17 CDT" duration-ms="16847">
+    <test started-at="2024-10-13T12:44:32 CDT" name="Accounts Page Test" finished-at="2024-10-13T12:44:49 CDT" duration-ms="16223">
       <class name="com.qa.waf.tests.AccountsPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:00 CDT" name="setUp" finished-at="2024-10-11T21:54:05 CDT" duration-ms="4722" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:32 CDT" name="setUp" finished-at="2024-10-13T12:44:38 CDT" duration-ms="5213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -57,27 +57,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:05 CDT" name="preCondition" finished-at="2024-10-11T21:54:09 CDT" duration-ms="3796" status="PASS">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:38 CDT" name="preCondition" finished-at="2024-10-13T12:44:41 CDT" duration-ms="3408" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="aplogoutLinkTest()[pri:5, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:09 CDT" name="aplogoutLinkTest" finished-at="2024-10-11T21:54:10 CDT" duration-ms="1008" status="PASS">
+        <test-method signature="aplogoutLinkTest()[pri:5, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:41 CDT" name="aplogoutLinkTest" finished-at="2024-10-13T12:44:42 CDT" duration-ms="936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aplogoutLinkTest -->
-        <test-method signature="accountHeadersTest()[pri:6, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:10 CDT" name="accountHeadersTest" finished-at="2024-10-11T21:54:10 CDT" duration-ms="109" status="PASS">
+        <test-method signature="accountHeadersTest()[pri:6, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:42 CDT" name="accountHeadersTest" finished-at="2024-10-13T12:44:42 CDT" duration-ms="125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- accountHeadersTest -->
-        <test-method signature="aptitleTest()[pri:7, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:10 CDT" name="aptitleTest" finished-at="2024-10-11T21:54:10 CDT" duration-ms="24" status="PASS">
+        <test-method signature="aptitleTest()[pri:7, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:42 CDT" name="aptitleTest" finished-at="2024-10-13T12:44:42 CDT" duration-ms="25" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aptitleTest -->
-        <test-method signature="apgeturlTest()[pri:8, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:10 CDT" name="apgeturlTest" finished-at="2024-10-11T21:54:10 CDT" duration-ms="29" status="PASS">
+        <test-method signature="apgeturlTest()[pri:8, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:42 CDT" name="apgeturlTest" finished-at="2024-10-13T12:44:42 CDT" duration-ms="23" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apgeturlTest -->
-        <test-method signature="apdoSearchTest(com.qa.waf.pojos.ProductPagePOJO)[pri:9, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:10 CDT" name="apdoSearchTest" data-provider="productSearchDataMethod" finished-at="2024-10-11T21:54:13 CDT" duration-ms="2638" status="PASS">
+        <test-method signature="apdoSearchTest(com.qa.waf.pojos.ProductPagePOJO)[pri:9, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:42 CDT" name="apdoSearchTest" data-provider="productSearchDataMethod" finished-at="2024-10-13T12:44:45 CDT" duration-ms="2413" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -88,7 +88,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apdoSearchTest -->
-        <test-method signature="apdoSearchTest(com.qa.waf.pojos.ProductPagePOJO)[pri:9, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:13 CDT" name="apdoSearchTest" data-provider="productSearchDataMethod" finished-at="2024-10-11T21:54:16 CDT" duration-ms="3069" status="PASS">
+        <test-method signature="apdoSearchTest(com.qa.waf.pojos.ProductPagePOJO)[pri:9, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:45 CDT" name="apdoSearchTest" data-provider="productSearchDataMethod" finished-at="2024-10-13T12:44:47 CDT" duration-ms="2637" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,15 +99,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apdoSearchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@3de8f619]" started-at="2024-10-11T21:54:16 CDT" name="tearDown" finished-at="2024-10-11T21:54:17 CDT" duration-ms="1392" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.AccountsPageTest@65bb6275]" started-at="2024-10-13T12:44:47 CDT" name="tearDown" finished-at="2024-10-13T12:44:49 CDT" duration-ms="1372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.waf.tests.AccountsPageTest -->
     </test> <!-- Accounts Page Test -->
-    <test started-at="2024-10-11T21:54:10 CDT" name="Register Page Test" finished-at="2024-10-11T21:54:25 CDT" duration-ms="14196">
+    <test started-at="2024-10-13T12:44:43 CDT" name="Register Page Test" finished-at="2024-10-13T12:44:56 CDT" duration-ms="13498">
       <class name="com.qa.waf.tests.RegisterTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.RegisterTest@17bffc17]" started-at="2024-10-11T21:54:10 CDT" name="setUp" finished-at="2024-10-11T21:54:14 CDT" duration-ms="3567" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.RegisterTest@5c887052]" started-at="2024-10-13T12:44:43 CDT" name="setUp" finished-at="2024-10-13T12:44:46 CDT" duration-ms="3441" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,41 +118,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="preReq()[pri:0, instance:com.qa.waf.tests.RegisterTest@17bffc17]" started-at="2024-10-11T21:54:14 CDT" name="preReq" finished-at="2024-10-11T21:54:16 CDT" duration-ms="1678" status="PASS">
+        <test-method is-config="true" signature="preReq()[pri:0, instance:com.qa.waf.tests.RegisterTest@5c887052]" started-at="2024-10-13T12:44:46 CDT" name="preReq" finished-at="2024-10-13T12:44:48 CDT" duration-ms="1859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preReq -->
-        <test-method signature="doRegisterTest(com.qa.waf.pojos.RegisterPagePOJO)[pri:18, instance:com.qa.waf.tests.RegisterTest@17bffc17]" started-at="2024-10-11T21:54:16 CDT" name="doRegisterTest" data-provider="RegisterPageDataMethod" finished-at="2024-10-11T21:54:20 CDT" duration-ms="4142" status="PASS">
+        <test-method signature="doRegisterTest(com.qa.waf.pojos.RegisterPagePOJO)[pri:18, instance:com.qa.waf.tests.RegisterTest@5c887052]" started-at="2024-10-13T12:44:48 CDT" name="doRegisterTest" data-provider="RegisterPageDataMethod" finished-at="2024-10-13T12:44:53 CDT" duration-ms="4491" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RegisterPagePOJO [firstName=john, lastName=spurlin, email=johnspirulinaaa1728701656236@gmail.com, telephone=4125877896, password=john@2024]]]>
+                <![CDATA[RegisterPagePOJO [firstName=john, lastName=spurlin, email=johnspirulinaaa1728841488615@gmail.com, telephone=4125877896, password=john@2024]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doRegisterTest -->
-        <test-method signature="doRegisterTest(com.qa.waf.pojos.RegisterPagePOJO)[pri:18, instance:com.qa.waf.tests.RegisterTest@17bffc17]" started-at="2024-10-11T21:54:20 CDT" name="doRegisterTest" data-provider="RegisterPageDataMethod" finished-at="2024-10-11T21:54:24 CDT" duration-ms="4467" status="PASS">
+        <test-method signature="doRegisterTest(com.qa.waf.pojos.RegisterPagePOJO)[pri:18, instance:com.qa.waf.tests.RegisterTest@5c887052]" started-at="2024-10-13T12:44:53 CDT" name="doRegisterTest" data-provider="RegisterPageDataMethod" finished-at="2024-10-13T12:44:56 CDT" duration-ms="3460" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[RegisterPagePOJO [firstName=diego, lastName=sebastian, email=diegosebastian1728701656237@gmail.com, telephone=1478523698, password=diego@2024]]]>
+                <![CDATA[RegisterPagePOJO [firstName=diego, lastName=sebastian, email=diegosebastian1728841488615@gmail.com, telephone=1478523698, password=diego@2024]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doRegisterTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.RegisterTest@17bffc17]" started-at="2024-10-11T21:54:24 CDT" name="tearDown" finished-at="2024-10-11T21:54:25 CDT" duration-ms="337" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.RegisterTest@5c887052]" started-at="2024-10-13T12:44:56 CDT" name="tearDown" finished-at="2024-10-13T12:44:56 CDT" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.waf.tests.RegisterTest -->
     </test> <!-- Register Page Test -->
-    <test started-at="2024-10-11T21:54:00 CDT" name="Results Page Test" finished-at="2024-10-11T21:54:27 CDT" duration-ms="26594">
+    <test started-at="2024-10-13T12:44:32 CDT" name="Results Page Test" finished-at="2024-10-13T12:44:57 CDT" duration-ms="25003">
       <class name="com.qa.waf.tests.ResultsTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:00 CDT" name="setUp" finished-at="2024-10-11T21:54:07 CDT" duration-ms="7174" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:32 CDT" name="setUp" finished-at="2024-10-13T12:44:39 CDT" duration-ms="6800" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,11 +163,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="prereq()[pri:0, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:07 CDT" name="prereq" finished-at="2024-10-11T21:54:11 CDT" duration-ms="3476" status="PASS">
+        <test-method is-config="true" signature="prereq()[pri:0, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:39 CDT" name="prereq" finished-at="2024-10-13T12:44:42 CDT" duration-ms="2862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prereq -->
-        <test-method signature="searchResultTitleTest(com.qa.waf.pojos.ProductPagePOJO)[pri:10, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:11 CDT" name="searchResultTitleTest" data-provider="productSearchDataMethod" finished-at="2024-10-11T21:54:13 CDT" duration-ms="2281" status="PASS">
+        <test-method signature="searchResultTitleTest(com.qa.waf.pojos.ProductPagePOJO)[pri:10, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:42 CDT" name="searchResultTitleTest" data-provider="productSearchDataMethod" finished-at="2024-10-13T12:44:44 CDT" duration-ms="2248" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultTitleTest -->
-        <test-method signature="searchResultTitleTest(com.qa.waf.pojos.ProductPagePOJO)[pri:10, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:13 CDT" name="searchResultTitleTest" data-provider="productSearchDataMethod" finished-at="2024-10-11T21:54:15 CDT" duration-ms="2216" status="PASS">
+        <test-method signature="searchResultTitleTest(com.qa.waf.pojos.ProductPagePOJO)[pri:10, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:44 CDT" name="searchResultTitleTest" data-provider="productSearchDataMethod" finished-at="2024-10-13T12:44:47 CDT" duration-ms="2099" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -189,7 +189,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultTitleTest -->
-        <test-method signature="searchResultsProductCount(com.qa.waf.pojos.ProductPagePOJO)[pri:11, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:15 CDT" name="searchResultsProductCount" data-provider="productSearchDataMethod" finished-at="2024-10-11T21:54:17 CDT" duration-ms="1986" status="PASS">
+        <test-method signature="searchResultsProductCount(com.qa.waf.pojos.ProductPagePOJO)[pri:11, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:47 CDT" name="searchResultsProductCount" data-provider="productSearchDataMethod" finished-at="2024-10-13T12:44:48 CDT" duration-ms="1966" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,7 +200,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultsProductCount -->
-        <test-method signature="searchResultsProductCount(com.qa.waf.pojos.ProductPagePOJO)[pri:11, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:17 CDT" name="searchResultsProductCount" data-provider="productSearchDataMethod" finished-at="2024-10-11T21:54:19 CDT" duration-ms="1860" status="PASS">
+        <test-method signature="searchResultsProductCount(com.qa.waf.pojos.ProductPagePOJO)[pri:11, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:48 CDT" name="searchResultsProductCount" data-provider="productSearchDataMethod" finished-at="2024-10-13T12:44:51 CDT" duration-ms="2342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -211,7 +211,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchResultsProductCount -->
-        <test-method signature="selectProductTest(com.qa.waf.pojos.ProductPagePOJO)[pri:12, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:19 CDT" name="selectProductTest" data-provider="productSelectDataMethod" finished-at="2024-10-11T21:54:22 CDT" duration-ms="3259" status="PASS">
+        <test-method signature="selectProductTest(com.qa.waf.pojos.ProductPagePOJO)[pri:12, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:51 CDT" name="selectProductTest" data-provider="productSelectDataMethod" finished-at="2024-10-13T12:44:54 CDT" duration-ms="3063" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -222,7 +222,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProductTest -->
-        <test-method signature="selectProductTest(com.qa.waf.pojos.ProductPagePOJO)[pri:12, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:22 CDT" name="selectProductTest" data-provider="productSelectDataMethod" finished-at="2024-10-11T21:54:26 CDT" duration-ms="3395" status="PASS">
+        <test-method signature="selectProductTest(com.qa.waf.pojos.ProductPagePOJO)[pri:12, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:54 CDT" name="selectProductTest" data-provider="productSelectDataMethod" finished-at="2024-10-13T12:44:57 CDT" duration-ms="2726" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -233,111 +233,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProductTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.ResultsTest@239a307b]" started-at="2024-10-11T21:54:26 CDT" name="tearDown" finished-at="2024-10-11T21:54:27 CDT" duration-ms="909" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.ResultsTest@57e388c3]" started-at="2024-10-13T12:44:57 CDT" name="tearDown" finished-at="2024-10-13T12:44:57 CDT" duration-ms="831" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.waf.tests.ResultsTest -->
     </test> <!-- Results Page Test -->
-    <test started-at="2024-10-11T21:54:17 CDT" name="Product Info Page Test" finished-at="2024-10-11T21:54:49 CDT" duration-ms="32199">
-      <class name="com.qa.waf.tests.ProductInfoPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:17 CDT" name="setUp" finished-at="2024-10-11T21:54:23 CDT" duration-ms="5862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="prereq()[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:23 CDT" name="prereq" finished-at="2024-10-11T21:54:26 CDT" duration-ms="3253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prereq -->
-        <test-method signature="productHeaderNameTest(com.qa.waf.pojos.ProductPagePOJO)[pri:13, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:26 CDT" name="productHeaderNameTest" data-provider="productSelectDataMethod" finished-at="2024-10-11T21:54:30 CDT" duration-ms="3690" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPagePOJO [productSearch=MacBook, productSelect=MacBook Air, productImagesCount=0, brand=null, productCode=null, rewardPoints=null, availability=null, price=null, exTax=null]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productHeaderNameTest -->
-        <test-method signature="productHeaderNameTest(com.qa.waf.pojos.ProductPagePOJO)[pri:13, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:30 CDT" name="productHeaderNameTest" data-provider="productSelectDataMethod" finished-at="2024-10-11T21:54:33 CDT" duration-ms="3592" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPagePOJO [productSearch=Samsung, productSelect=Samsung Galaxy Tab 10.1, productImagesCount=0, brand=null, productCode=null, rewardPoints=null, availability=null, price=null, exTax=null]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productHeaderNameTest -->
-        <test-method signature="productImagesCountTest(com.qa.waf.pojos.ProductPagePOJO)[pri:14, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:33 CDT" name="productImagesCountTest" data-provider="productImagesDataMethod" finished-at="2024-10-11T21:54:36 CDT" duration-ms="2965" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPagePOJO [productSearch=MacBook, productSelect=MacBook Air, productImagesCount=4, brand=null, productCode=null, rewardPoints=null, availability=null, price=null, exTax=null]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productImagesCountTest(com.qa.waf.pojos.ProductPagePOJO)[pri:14, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:36 CDT" name="productImagesCountTest" data-provider="productImagesDataMethod" finished-at="2024-10-11T21:54:39 CDT" duration-ms="2930" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPagePOJO [productSearch=Samsung, productSelect=Samsung Galaxy Tab 10.1, productImagesCount=7, brand=null, productCode=null, rewardPoints=null, availability=null, price=null, exTax=null]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productImagesCountTest -->
-        <test-method signature="productMetaDataTest(com.qa.waf.pojos.ProductPagePOJO)[pri:15, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:39 CDT" name="productMetaDataTest" data-provider="productMetaDataMethod" finished-at="2024-10-11T21:54:42 CDT" duration-ms="2933" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPagePOJO [productSearch=MacBook, productSelect=MacBook Air, productImagesCount=0, brand=Apple, productCode=Product 17, rewardPoints=700, availability=Out Of Stock, price=null, exTax=null]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productMetaDataTest -->
-        <test-method signature="productPriceTest(com.qa.waf.pojos.ProductPagePOJO)[pri:16, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:42 CDT" name="productPriceTest" data-provider="productCompleteDataMethod" finished-at="2024-10-11T21:54:45 CDT" duration-ms="2870" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPagePOJO [productSearch=MacBook, productSelect=MacBook Air, productImagesCount=0, brand=Apple, productCode=Product 17, rewardPoints=700, availability=Out Of Stock, price=$1,202.00, exTax=$1,000.00]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productPriceTest -->
-        <test-method signature="productDetailsTest(com.qa.waf.pojos.ProductPagePOJO)[pri:17, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:45 CDT" name="productDetailsTest" data-provider="productCompleteDataMethod" finished-at="2024-10-11T21:54:48 CDT" duration-ms="3091" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ProductPagePOJO [productSearch=MacBook, productSelect=MacBook Air, productImagesCount=0, brand=Apple, productCode=Product 17, rewardPoints=700, availability=Out Of Stock, price=$1,202.00, exTax=$1,000.00]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- productDetailsTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.waf.tests.ProductInfoPageTest@f1da57d]" started-at="2024-10-11T21:54:48 CDT" name="tearDown" finished-at="2024-10-11T21:54:49 CDT" duration-ms="994" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.waf.tests.ProductInfoPageTest -->
-    </test> <!-- Product Info Page Test -->
   </suite> <!-- OpenCart Regression Suite Master Suite -->
 </testng-results>
