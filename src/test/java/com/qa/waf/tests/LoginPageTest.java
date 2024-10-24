@@ -17,7 +17,7 @@ import io.qameta.allure.Story;
 @Story("UserStory 101:Design Login Page for Opencart with title,url,forgot password link,user is able to login")
 public class LoginPageTest extends BaseTest {
 	@Severity(SeverityLevel.MINOR)
-	@Description("Checking login page title test")
+	@Description("Checking Login Page title test")
 	@Feature("title test")
 	@Test(priority = 0)
 	public void lpTitleTest() {
