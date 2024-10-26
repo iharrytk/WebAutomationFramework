@@ -100,7 +100,7 @@ pipeline
         
         
         
-        stage('Publish Allure Reports') {
+        stage('Publish Allure Reports for Sanity test cases in stage before prod deploy') {
            steps {
                 script {
                     allure([
