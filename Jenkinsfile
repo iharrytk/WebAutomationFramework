@@ -100,19 +100,7 @@ pipeline
         
         
         
-        stage('Publish Allure Reports for Sanity test cases in stage before prod deploy') {
-           steps {
-                script {
-                    allure([
-                        includeProperties: false,
-                        jdk: '',
-                        properties: [],
-                        reportBuildPolicy: 'ALWAYS',
-                        results: [[path: '/allure-results']]
-                    ])
-                }
-            }
-        }
+       
         
         
     }
