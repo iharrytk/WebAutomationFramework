@@ -42,7 +42,7 @@ public class LoginPage {
 		return ele.checkElementIsDisplayed(forgotpassword);
 	}
 
-	@Step("getting all the footer links")
+	@Step("getting all the footer links..")
 	public List<WebElement> footerlist() {
 
 		return ele.getElements(footerlist);
