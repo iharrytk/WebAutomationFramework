@@ -4,6 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Properties;
 
 import org.openqa.selenium.TakesScreenshot;
@@ -11,6 +14,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.apache.commons.io.FileUtils;
 
 import org.openqa.selenium.OutputType;
@@ -23,7 +27,7 @@ public class DriverFactory {
 	OptionsManager options;
 	public static String highlightElement;
 	public static ThreadLocal<WebDriver> tlDriver=new ThreadLocal<WebDriver>();
-	//Properties prop = new Properties();
+	public Properties prop;
 
 	public DriverFactory(WebDriver driver) {
 		this.driver = driver;
@@ -36,18 +40,36 @@ public class DriverFactory {
 		switch (browser.toLowerCase().trim()) {
 		case "chrome":
 			//driver = new ChromeDriver(options.getChromeOptions());
-			tlDriver.set(new ChromeDriver(options.getChromeOptions()));
-			System.out.println("Opening Chrome browser");
+			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+				init_remoteDriver("chrome");
+			}
+			else{
+				//run on local or on jenkins
+				tlDriver.set(new ChromeDriver(options.getChromeOptions()));
+				System.out.println("Opening Chrome browser");
+			}
 			break;
 		case "edge":
 			//driver = new EdgeDriver(options.getEdgeOptions());
-			tlDriver.set(new EdgeDriver(options.getEdgeOptions()));
-			System.out.println("Opening Edge browser");
+			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+				init_remoteDriver("edge");
+			}
+			else{
+				//run on local or on jenkins
+				tlDriver.set(new EdgeDriver(options.getEdgeOptions()));
+				System.out.println("Opening Edge browser");
+			}
 			break;
 		case "firefox":
 			//driver = new FirefoxDriver(options.getFirefoxOptions());
-			tlDriver.set(new FirefoxDriver(options.getFirefoxOptions()));
-			System.out.println("Opening Firefox browser");
+			if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+				init_remoteDriver("firefox");
+			}
+			else{
+				//run on local or on jenkins
+				tlDriver.set(new FirefoxDriver(options.getFirefoxOptions()));
+				System.out.println("Opening Firefox browser");
+			}
 			break;
 		default:
 			System.out.println("Please enter a valid browser name.You have entered:" + browser);
@@ -60,13 +82,43 @@ public class DriverFactory {
 
 	}
 	
+	
+	private void init_remoteDriver(String browserName) {
+		System.out.println("Running test cases on grid with browser:"+browserName);
+		
+		try {
+		switch (browserName.toLowerCase()) {
+		case "chrome":
+			tlDriver.set(new RemoteWebDriver((new URI(prop.getProperty("huburl"))).toURL(), options.getChromeOptions()));
+			break;
+		case "edge":
+			tlDriver.set(new RemoteWebDriver((new URI(prop.getProperty("huburl"))).toURL(), options.getEdgeOptions()));
+			break;
+		case "firefox":
+			tlDriver.set(new RemoteWebDriver((new URI(prop.getProperty("huburl"))).toURL(), options.getFirefoxOptions()));
+			break;	
+		default:
+			break;
+		}
+		}
+		catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (URISyntaxException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+				
+	}
+
 	public synchronized static WebDriver getDriver() {
 		
 		return tlDriver.get();
 	}
 
 	public Properties init_prop() {
-		Properties prop = new Properties();
+		//Properties prop = new Properties();
+		prop = new Properties();
 		FileInputStream ip = null;
 		// mvn clean install -Denv="qa"
 		String envName = System.getProperty("env");
